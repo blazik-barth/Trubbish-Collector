@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TRUBBISH COLLECTOR</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+	<script src="https://unpkg.com/dexie/dist/dexie.js"></script>
+	<script src="script.js"></script>
+
+	<script>
+		if ('serviceWorker' in navigator) {
+  		navigator.serviceWorker.register('./sw.js');
+		}
+	</script>
+	
+	<h1>Trubbish Collector</h1>
+	<hr>
+	<canvas id="game-canvas" width="500" height="500" style="background-color: #856088">
+		This game cannot run on your browser... please try a different one.
+	</canvas>
+
+	<hr>
+	<div>
+		<b>How to Play</b><br>
+		Use the arrow keys to move the Pokeball around the screen. Collect as many Trubbish
+		<img src="images/trubbish.png" width="50" height="50">
+		as you can before touching four Yungoos
+		<img src="images/yungoos.png" width="50" height="50">!
+	</div>
+	<hr>
+	<div id="high-scores">
+		<b>High Scores</b>
+		<ul></ul>
+	</div>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+	
+  
+</body>
+
+</html>

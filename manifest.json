@@ -1,0 +1,17 @@
+{
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "name": "Trubbish Collector",
+  "short_name": "trubbish",
+  "description": "Game project for CS 294 at UIC",
+  "display": "standalone",
+  "start_url": "/?utm_source=homescreen",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "images/trubbish.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
